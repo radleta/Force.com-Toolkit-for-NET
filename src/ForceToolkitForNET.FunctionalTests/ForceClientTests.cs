@@ -628,7 +628,7 @@ namespace Salesforce.Force.FunctionalTests
             
             var eventSuccessResponse = await _client.CreateAsync("Event", newEvent);
 
-            Assert.IsTrue(eventSuccessResponse.Success);
+            Assert.IsNotNullOrEmpty(eventSuccessResponse.Success);
         }
 
         [Test]

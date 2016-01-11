@@ -12,7 +12,7 @@ namespace Salesforce.Common.Models
         public int TotalSize { get; set; }
 
         [JsonProperty(PropertyName = "done")]
-        public bool Done { get; set; }
+        public string Done { get; set; }
 
         [JsonProperty(PropertyName = "records")]
         public List<T> Records { get; set; }
